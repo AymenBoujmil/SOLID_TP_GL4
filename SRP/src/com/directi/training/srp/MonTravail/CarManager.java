@@ -2,11 +2,11 @@ package com.directi.training.srp.MonTravail;
 
 public class CarManager
 {
-    private final CarDao carDao;
-    private final CarFormatter carFormatter;
-    private final CarRater carRater;
+    private final ICarDao carDao;
+    private final ICarFormatter carFormatter;
+    private final ICarRater carRater;
 
-    public CarManager(CarDao carDao, CarFormatter carFormatter, CarRater carRater)
+    public CarManager(ICarDao carDao, ICarFormatter carFormatter, ICarRater carRater)
     {
         this.carDao = carDao;
         this.carFormatter = carFormatter;
